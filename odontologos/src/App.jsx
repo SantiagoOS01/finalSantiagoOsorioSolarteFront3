@@ -7,7 +7,7 @@ function App() {
   return (
       <AppProvider>
         <AppRoutes/> 
-      </AppProvider>         
+      </AppProvider>       
       
   );
 }

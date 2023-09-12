@@ -8,9 +8,9 @@ const Home = () => {
   const { users } = state;
   
   return (          
-      <div>
-        <h1>Home</h1>        
-        {users.map((user) => (
+      <div>        
+        <h1>Inicio</h1>        
+        {users?.map((user) => (
          <Link key={user.id} to={`/dentist/${user.id}`}>
           <Card
             key={user.id}
@@ -22,8 +22,9 @@ const Home = () => {
           />
          </Link> 
         ))}
+       
       </div>    
-  );
+    );
 };
 
 export default Home;
