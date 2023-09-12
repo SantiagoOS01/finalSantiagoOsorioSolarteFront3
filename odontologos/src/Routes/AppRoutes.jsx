@@ -15,8 +15,7 @@ function AppRoutes(){
           <div>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/dentist">Dentist</Link></li>
+                    <li><Link to="/">Home</Link></li>                    
                     <li><Link to="/favs">Favorites</Link></li>
                     <li><Link to="/contac">Contact</Link></li>
                 </ul>
@@ -24,7 +23,7 @@ function AppRoutes(){
           </div>
           <Routes>
             <Route path='/' element={<Home/>}></Route>
-            <Route path='/dentist' element={<Dentist/>}></Route>
+            <Route path='/dentist/:id' element={<Dentist/>}></Route>
             <Route path='/favs' element={<Favs/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
           </Routes>

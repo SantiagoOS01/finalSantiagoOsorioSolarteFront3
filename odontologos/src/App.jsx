@@ -1,12 +1,14 @@
 import AppRoutes from "./Routes/AppRoutes";
+import AppProvider from "./Context/context";
 
 
 
 function App() {
   return (
-      <div className="App">
-        <AppRoutes/>          
-      </div>
+      <AppProvider>
+        <AppRoutes/> 
+      </AppProvider>         
+      
   );
 }
 
