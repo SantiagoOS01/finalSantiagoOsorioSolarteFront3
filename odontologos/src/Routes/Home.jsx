@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../Utils/Card'
 import { AppContext } from '../Context/context';
 
@@ -10,6 +11,7 @@ const Home = () => {
       <div>
         <h1>Home</h1>        
         {users.map((user) => (
+         <Link key={user.id} to={`/dentist/${user.id}`}>
           <Card
             key={user.id}
             id={user.id}
@@ -18,6 +20,7 @@ const Home = () => {
             website={user.website}
             phone={user.phone}
           />
+         </Link> 
         ))}
       </div>    
   );
