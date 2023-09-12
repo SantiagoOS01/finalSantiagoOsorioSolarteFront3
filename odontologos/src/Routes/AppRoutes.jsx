@@ -15,9 +15,9 @@ function AppRoutes(){
           <div>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>                    
-                    <li><Link to="/favs">Favorites</Link></li>
-                    <li><Link to="/contac">Contact</Link></li>
+                    <li><Link to="/">Inicio</Link></li>                    
+                    <li><Link to="/favs">Favoritos</Link></li>
+                    <li><Link to="/contact">Contacto</Link></li>
                 </ul>
             </nav>
           </div>
