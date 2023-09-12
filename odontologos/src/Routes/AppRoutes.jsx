@@ -2,9 +2,7 @@ import {
     BrowserRouter as Router,
     Route,
     Link,
-    Routes,
-    useParams,
-    useNavigate
+    Routes,    
   } from "react-router-dom";
 import Home from "./Home";
 import Favs from "./Favs";
