@@ -1,3 +1,10 @@
+:root
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,7 +22,7 @@ code {
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
   border: none;
-  width: 100%;
+  width: 20%;
   cursor: pointer;
 }
 
@@ -23,11 +30,33 @@ h1{
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px; 
+  background-color: #333;
+}
+
+nav img.logo {
+  max-height: 150px; 
+  max-width: 100%; 
+  margin-right: 20px; 
+}
+
+nav ul {
+  list-style: none; 
+  display: flex;
+  gap: 20px; 
+}
+
+nav li {
+  padding: 0; 
+}
+
+nav a {
+  text-decoration: none; 
+  color: white; 
 }
 
 a{
@@ -37,7 +66,7 @@ a{
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
+  color: rgb(25, 18, 127);
 } 
 
 footer {
@@ -119,12 +148,19 @@ button[type="submit"]:hover {
 .card{
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 200px;
+  width: 300px;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  border: 2px solid rgb(78, 9, 240);
+  border-radius: 0%;
+  flex: 1;
 }
+
+.imagen{
+  width: 100px;
+}
+
 
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
@@ -132,7 +168,7 @@ button[type="submit"]:hover {
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 1rem;
   width: 90vw;
   height: auto;

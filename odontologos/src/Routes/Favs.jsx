@@ -26,7 +26,7 @@ const Favs = () => {
       <div className="card-grid">
         {favCards.map((favCard) => (
           <div key={favCard.id} className="card">
-            <img src="" alt="imgen dentista" />
+            <img className="imagen" src="../src/Utils/Desntist.png" alt="imgen dentista" />
             <p>Nombre: {favCard.name}</p>
             <p>Username: {favCard.username}</p>
             <p>Website: {favCard.website}</p>

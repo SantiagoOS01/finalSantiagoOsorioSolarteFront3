@@ -10,6 +10,7 @@ import Favs from "./Favs";
 import Dentist from "./Dentist";
 import Contact from "./Contact";
 import Navbar from "../Utils/Navbar";
+import '../index.css'
 
 function AppRoutes(){
     return(

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeSwitcher from '../Utils/ThemeButton';
 
 const Navbar = () => {
   return (
     <nav>
+      <Link to="/"><img className='logo' src="src/Utils/logo1.png" alt="" /></Link>
       <ul>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/favs">Favoritos</Link></li>

@@ -28,7 +28,7 @@ import { AppContext } from "../Context/context";
   return (
     <div className="card-grid">
       <div className="card">
-       <img src="" alt="Imagen odontologo" />
+       <img className="imagen" src="src/Utils/Desntist.png" alt="Profe, si ve esto, es que no me quiere renderizar la imagen" />
        <p>Nombre: {name}</p>
        <p>Username: {username}</p>  
        <p>Website: {website}</p>
