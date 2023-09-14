@@ -1,10 +1,13 @@
-:root
-
-
-
-
-
-
+:root{
+  --darkTheme:#071920;
+  --darkFont:#E9F9FF;
+  --lightTheme:#E9F9FF;
+  --lightFont:#071920;
+  --normalButton:#EF8200;
+  --hoverButton:#0C6BB2;
+  --navAndFooter:#00B655;
+  --navAndFooterFont:#071920; 
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,17 +16,45 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: var(--normalButton);
   padding: 10px;
   border: none;
   width: 20%;
   cursor: pointer;
+}
+.favButton:hover{
+  background-color: var(--hoverButton);
+}
+
+.backButton{
+  background-color: #EF8200;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.backButton:hover{
+  background-color: var(--hoverButton);
+}
+
+.themeButton{
+  background-color: var(--normalButton);
+  color: var(--darkTheme);
+  border-radius: none;
+  border: solid;
+  border-color: var(--normalButton);
+  padding: 5px;
+}
+
+.themeButton:hover{
+  background-color: var(--hoverButton);
+  border-color: var(--hoverButton);
 }
 
 h1{
@@ -34,14 +65,15 @@ nav {
   display: flex;
   align-items: center; 
   justify-content: space-between;
-  padding: 10px; 
-  background-color: #333;
+  padding: 5px; 
+  background-color: var(--navAndFooter);
 }
 
 nav img.logo {
-  max-height: 150px; 
+  max-height: 170px; 
   max-width: 100%; 
-  margin-right: 20px; 
+  margin-right: 20px;
+  margin-left: 20px;  
 }
 
 nav ul {
@@ -56,7 +88,7 @@ nav li {
 
 nav a {
   text-decoration: none; 
-  color: white; 
+  color: var(--navAndFooterFont) 
 }
 
 a{
@@ -66,33 +98,53 @@ a{
   cursor: pointer;
 }
 a:hover{
-  color: rgb(25, 18, 127);
+  color: var(--hoverButton);
 } 
+
+.Theme.light {
+  background: var(--lightTheme);
+  color: var(--lightFont);
+}
+
+.Theme.dark {
+  background: var(--darkTheme);
+  color: var(--lightFont);
+}
 
 footer {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
+  justify-content:space-evenly;
+  text-align: center;  
+  color: var(--darkFont);
+  position: relative;  
+  width: 100%;
+  height: auto;  
+  background-color: var(--navAndFooter);
+  align-items: center;
 }
 
 footer > img{
-  width: 200px;
-  margin: 0;
+  width: 200px;  
 }
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
+
+.Contactos{
+  color: var(--hoverButton);
 }
+
+.Contactos:hover{
+  color: var(--normalButton);
+}
+
+.imagenF{
+  width: 200px
+}
+
+
 
 .form-container {
   width: 300px;
   margin: 0 auto;
+  margin-bottom: 10px;  
 }
 .form-field {
   margin-bottom: 10px;
@@ -102,7 +154,6 @@ footer > p{
   margin-bottom: 5px; 
   font-weight: bold; 
 }
-
 
 .form-field input[type="text"],
 .form-field input[type="email"],
@@ -114,11 +165,10 @@ footer > p{
   font-size: 16px;
 }
 
-
 button[type="submit"] {
   padding: 10px 20px; 
-  background-color: #ddff00; 
-  color: #000000; 
+  background-color: var(--normalButton); 
+  color: var(--darkTheme); 
   border: none; 
   border-radius: 5px; 
   font-size: 18px; 
@@ -132,7 +182,7 @@ button[type="submit"] {
   cursor: text;
 }
 button[type="submit"]:hover {
-  background-color: #00b306; 
+  background-color: var(--hoverButton); 
 }
 
 .success-message {
@@ -152,9 +202,10 @@ button[type="submit"]:hover {
   align-items: center;
   width: 300px;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 2px solid rgb(78, 9, 240);
+  border: 2px solid var(--normalButton);
   border-radius: 0%;
   flex: 1;
+  margin-bottom: 20px;
 }
 
 .imagen{
@@ -163,7 +214,7 @@ button[type="submit"]:hover {
 
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid var(--navAndFooter);
 }
 
 .card-grid{

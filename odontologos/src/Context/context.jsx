@@ -2,12 +2,12 @@ import { useEffect, createContext, useReducer } from 'react';
 
 export const themes = {
   light: {
-    font: 'black',
-    background: 'white',
+    font: '#071920',
+    background: '#E9F9FF',
   },
   dark: {
-    font: 'white',
-    background: 'black',
+    font: '#E9F9FF',
+    background: '#071920',
   },
 };
 
@@ -16,9 +16,9 @@ export const AppContext = createContext();
 const appReducer = (state, action) => {
   switch (action.type) {
     case 'DARK':
-      return { theme: themes.dark };
+      return { ...state, theme: themes.dark };
     case 'LIGHT':
-      return { theme: themes.light };
+      return { ...state, theme: themes.light };
     case 'SET_USERS':
       return { ...state, users: action.payload };
     default:

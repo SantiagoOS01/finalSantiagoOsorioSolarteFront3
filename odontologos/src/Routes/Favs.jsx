@@ -2,7 +2,8 @@ import React, { useContext, useState, useEffect } from "react";
 import { AppContext } from "../Context/context";
 
 const Favs = () => {
-  const { dispatch } = useContext(AppContext);  
+  const {state, dispatch } = useContext(AppContext);  
+  const fontColor = state.theme.font;
   
   const [favCards, setFavCards] = useState([]);
   
@@ -33,7 +34,7 @@ const Favs = () => {
             <p>Telefono: {favCard.phone}</p>
             <button
               onClick={() => removeFromFavs(favCard.id)} 
-              className="removeButton"
+              className="favButton"
             >
               Ya no es mi favorito
             </button>

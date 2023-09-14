@@ -20,7 +20,7 @@ const Detail = () => {
           <p>Email: {dentist.email}</p>
           <p>Phone: {dentist.phone}</p>
           <p>Website: {dentist.website}</p>
-          <button><Link to="/">Atras</Link></button>
+          <Link to="/"><button className='backButton'>Atras</button></Link>
         </div>
       )}
     </div>
